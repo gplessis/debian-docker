@@ -3,7 +3,7 @@ MAINTAINER Guillaume Plessis "gui@dotdeb.org"
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ADD wheezy-i386.tar /
+ADD wheezy-amd64.tar /
 
 RUN echo "deb http://http.debian.net/debian/ wheezy main contrib non-free" > /etc/apt/sources.list
 RUN echo "deb http://http.debian.net/debian/ wheezy-updates main contrib non-free" >> /etc/apt/sources.list

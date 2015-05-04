@@ -1,16 +1,16 @@
-build: wheezy-chroot.tar
-	docker build -t jmtd/debian:wheezy-i386 ./
+build: wheezy-i386.tar
+	docker build -t gplessis/debian:wheezy-i386 ./
 
-wheezy-chroot.tar: wheezy-chroot
-	cd wheezy-chroot && tar cf ../wheezy-chroot.tar ./
+wheezy-i386.tar: wheezy-i386-chroot
+	cd wheezy-i386 && tar cf ../wheezy-i386.tar ./
 
-wheezy-chroot:
-	mkdir -p wheezy-chroot
-	debootstrap --arch i386 wheezy ./wheezy-chroot http://http.debian.net/debian
-	chroot ./wheezy-chroot apt-get clean
+wheezy-i386-chroot:
+	mkdir -p wheezy-i386
+	debootstrap --arch i386 wheezy ./wheezy-i386 http://http.debian.net/debian
+	chroot ./wheezy-i386 apt-get clean
 
 clean:
-	rm -f wheezy-chroot.tar
-	rm -r wheezy-chroot
+	rm -f wheezy-i386.tar
+	rm -r wheezy-i386-chroot
 
-.PHONY: wheezy-chroot clean
+.PHONY: wheezy-i386-chroot clean

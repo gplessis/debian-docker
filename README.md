@@ -1,7 +1,9 @@
 # debian-docker
-scripts and Dockerfiles to build jmtd/debian* docker images
+scripts and Dockerfiles to build gplessis/debian* docker images
 
-What I use to build `jmtd/debian:*` docker images on the Docker registry.
+Original Dockerfiles and Makefiles by Jonathan Dowland (jmt@debian.org)
+
+What I use to build `gplessis/debian:*` docker images on the Docker registry.
 
 ## Description of images
 
