@@ -1,5 +1,5 @@
 build: wheezy-i386.tar
-	docker build -t gplessis/debian:wheezy-i386 ./
+	docker build -t dotdeb/debian:wheezy-i386 ./
 
 wheezy-i386.tar: wheezy-i386-chroot
 	cd wheezy-i386 && tar cf ../wheezy-i386.tar ./

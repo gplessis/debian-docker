@@ -1,5 +1,5 @@
 build: jessie-amd64.tar
-	docker build -t gplessis/debian:jessie-amd64 ./
+	docker build -t dotdeb/debian:jessie-amd64 ./
 
 jessie-amd64.tar: jessie-amd64-chroot
 	cd jessie-amd64 && tar cf ../jessie-amd64.tar ./

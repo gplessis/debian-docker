@@ -1,5 +1,5 @@
 build: jessie-i386.tar
-	docker build -t gplessis/debian:jessie-i386 ./
+	docker build -t dotdeb/debian:jessie-i386 ./
 
 jessie-i386.tar: jessie-i386-chroot
 	cd jessie-i386 && tar cf ../jessie-i386.tar ./

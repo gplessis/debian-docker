@@ -1,5 +1,5 @@
 build: squeeze-amd64.tar
-	docker build -t gplessis/debian:squeeze-amd64 ./
+	docker build -t dotdeb/debian:squeeze-amd64 ./
 
 squeeze-amd64.tar: squeeze-amd64-chroot
 	cd squeeze-amd64 && tar cf ../squeeze-amd64.tar ./

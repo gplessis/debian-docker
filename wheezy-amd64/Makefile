@@ -1,5 +1,5 @@
 build: wheezy-amd64.tar
-	docker build -t gplessis/debian:wheezy-amd64 ./
+	docker build -t dotdeb/debian:wheezy-amd64 ./
 
 wheezy-amd64.tar: wheezy-amd64-chroot
 	cd wheezy-amd64 && tar cf ../wheezy-amd64.tar ./

@@ -1,5 +1,5 @@
 build: squeeze-i386.tar
-	docker build -t gplessis/debian:squeeze-i386 ./
+	docker build -t dotdeb/debian:squeeze-i386 ./
 
 squeeze-i386.tar: squeeze-i386-chroot
 	cd squeeze-i386 && tar cf ../squeeze-i386.tar ./
